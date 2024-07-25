@@ -66,7 +66,7 @@
             margin-bottom: 1.2rem;
         } 
         &__icons {
-            column-gap: 0.45rem;
+            column-gap: 0.5rem;
         }   
         &__more{
             column-gap: 0.5rem;
@@ -74,12 +74,22 @@
         }
     }
     @media screen and (min-width: 992px) {
-        padding-block: 3.4rem 2.9rem;
+        padding-block: 3.6rem 2.9rem;
         &__data{
             row-gap: 1.5rem;
         }
         &__desc {
             margin-bottom: 1.2rem;
+        }
+        &__text {
+            transform: translate(3px, -3px);
+            letter-spacing: -0.15px;
+        }
+        &__clean {
+            margin-bottom: 0.9rem;
+        }
+        &__icons-telegram{
+            transform: translate(5px, 2px);
         }
     }
     
