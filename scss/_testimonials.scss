@@ -54,8 +54,7 @@
     &__joinh-deere,
     &__banana-boat,
     &__fujifilm{
-        // width: 158px;
-        background: radial-gradient($grayf0 0%, $grayf0 10%, white 15%, white 45%, $grayf0 75%, $grayf0 100%);
+        background: radial-gradient(#f0f2f6 0%, #f0f2f6 10%, white 15%, white 62%, #f0f2f6 100%, #f0f2f6 100%);
         height: 100px;
         display: flex;
         align-items: center;
@@ -99,8 +98,7 @@
         letter-spacing: -0.1px;
     }
     &__button{
-        background-color: $green71;
-        width: 236px;
+        background-color: #73dbe7;
         padding: 1.8rem 1.1rem 1.8rem 1.2rem;
         display: flex;
         align-items: center;
@@ -307,6 +305,9 @@
         }
         &__button{
             letter-spacing: -0.1px;
+        }
+        &__banana-boat {
+            transform: translate(-4px, -2px);
         }
 
     }
