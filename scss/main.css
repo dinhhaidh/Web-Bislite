@@ -677,6 +677,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     justify-content: center;
     align-items: center;
   }
+  .testimonials__communications, .testimonials__leader, .testimonials__fider, .testimonials__joinh-deere, .testimonials__banana-boat, .testimonials__fujifilm {
+    width: 100px;
+  }
 }
 @media screen and (min-width: 320px) {
   .testimonials__content {
@@ -704,10 +707,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     justify-content: center;
   }
 }
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 340px) {
   .testimonials__images {
     grid-template-columns: repeat(3, max-content);
   }
+}
+@media screen and (min-width: 575px) {
   .testimonials__communications, .testimonials__leader, .testimonials__fider, .testimonials__joinh-deere, .testimonials__banana-boat, .testimonials__fujifilm {
     width: 158px;
   }
