@@ -406,6 +406,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   -moz-column-gap: 0.45rem;
        column-gap: 0.45rem;
 }
+.middle__icons:hover {
+  text-decoration: underline !important;
+}
 .middle-read__more {
   color: #2aacc8;
   font-size: 13px;
@@ -516,6 +519,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .lastets-works__content:hover {
   transform: translateY(0px);
+}
+.lastets-works__content a:hover {
+  text-decoration: underline !important;
 }
 .lastets-works__article:hover .lastets-works__content {
   transform: translateY(0px);

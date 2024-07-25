@@ -40,6 +40,9 @@
         display: flex;
         align-items: center;
         column-gap: 0.45rem;
+        &:hover{
+            text-decoration: underline !important;
+        }
     }
     &-read__more{
         color: $green2a;
