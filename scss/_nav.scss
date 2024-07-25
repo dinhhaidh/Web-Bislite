@@ -1,0 +1,273 @@
+.nav {
+    height: $header-height;
+    &__data {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo,
+    &__burger,
+    &__close {
+        color: $black;
+    }
+    &__logo {
+        width: 149px;
+    }
+    &__toggle {
+        position: relative;
+        width: 32px;
+        height: 32px;
+    }
+    &__burger,
+    &__close {
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        inset: 0;
+        margin: auto;
+        font-size: 1.25rem;
+        cursor: pointer;
+        transition:
+            opacity 0.1s,
+            transform 0.4s;
+    }
+    &__close {
+        opacity: 0;
+    }
+
+    @media screen and (max-width: 920px) {
+        &__menu {
+            position: absolute;
+            left: 0;
+            top: 2.5rem;
+            width: 100%;
+            height: calc(100vh - 3.5rem);
+            overflow: auto;
+            pointer-events: none;
+            opacity: 0;
+            transition:
+                top 0.4s,
+                opacity 0.3s;
+        }
+        &__list {
+            background-color: $graye8;
+            padding-top: 1rem;
+        }
+    }
+    &__link {
+        color: $black;
+        font-weight: 500;
+        padding: 1.25rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: color 0.3s;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        &:hover {
+            color: $green2a;
+        }
+    }
+
+    .show-icon .nav__burger {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+    .show-icon .nav__close {
+        opacity: 1;
+        transform: rotate(90deg);
+    }
+
+    @media screen and (min-width: 920px) {
+        height: 7.4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__menu {
+            margin-right: 11px;
+        }
+        &__toggle {
+            display: none;
+        }
+
+        &__list {
+            height: 100%;
+            display: flex;
+            column-gap: 32px;
+        }
+
+        &__link {
+            height: 100%;
+            padding: 7px 7px 7px 8.5px;
+            justify-content: initial;
+            column-gap: 0.25rem;
+        }
+        &__logo {
+            transform: translateY(-6px);
+        }
+    }
+}
+.dropdown {
+    &__item {
+        cursor: pointer;
+        &:hover {
+            color: $green2a;
+            background-color: #fff !important;
+            border-top: 3px solid $green2a;
+        }
+        &:hover .nav__link {
+            color: $green2a ;
+        }
+    }
+  
+    &__arrow {
+        font-size: 13px;
+        font-weight: initial;
+        transition: transform 0.4s;
+        color: #000;
+        font-weight: 600;
+        position: absolute;
+        right: 35px;
+    }
+
+    &__menu,
+    &__submenu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+    }
+
+    &__item:hover &__menu,
+    &__subitem:hover > &__submenu {
+        max-height: 1000px;
+        transition: max-height 0.4s ease-in;
+    }
+    &__link,
+    &__sublink {
+        padding: 0.5rem 1.25rem 0.53rem 2.5rem;
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        font-weight: 400;
+        transition: background-color 0.3s;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    &__menu li {
+        &:first-child,
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            border-bottom: 1px solid $graydf;
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__link {
+        background-color: $graye8;
+        color: #000;
+
+        &:hover {
+            color: $green2a;
+        }
+    }
+
+    &__link i,
+    &__sublink i {
+        font-size: 1.25rem;
+        font-weight: initial;
+    }
+
+    @media screen and (min-width: 820px) {
+        .container {
+            margin-inline: auto;
+        }
+
+        &__item,
+        &__subitem {
+            position: relative;
+        }
+
+        &__menu,
+        &__submenu {
+            max-height: initial;
+            overflow: initial;
+            position: absolute;
+            left: 0;
+            top: 6rem;
+            opacity: 0;
+            pointer-events: none;
+            transition:
+                opacity 0.3s,
+                top 0.3s;
+            padding: 13px 0 10px;
+            border-bottom: 4px solid $green2a;
+        }
+        &__link {
+            color: $black;
+            background-color: #fff;
+        }
+
+        &__link,
+        &__sublink {
+            padding-inline: 1rem 0.5rem;
+            width: 195px;
+            letter-spacing: -0.1px;
+        }
+
+        &__subitem &__link {
+            padding-inline: 1rem;
+        }
+
+        &__submenu {
+            position: absolute;
+            left: 100%;
+            top: 0.5rem;
+        }
+
+        &__item:hover &__menu {
+            opacity: 1;
+            top: 2rem;
+            pointer-events: initial;
+            transition: top 0.3s;
+            background-color: #fff;
+            box-shadow: 2px 2px 4px $graye8;
+        }
+
+        &__item:hover:before {
+            content: "";
+            width: 100px;
+            height: 36px;
+            display: block;
+            position: absolute;
+            background: white;
+            border-top: 3px solid #2aacc8;
+            top: -3px;
+            z-index: 0;
+            right: -17px;
+            color: $green2a;
+        }
+        &__arrow {
+            right: -10px;
+        }
+    }
+}
+
+.show-menu {
+    opacity: 1;
+    top: 3.5rem;
+    pointer-events: initial;
+}
+.nav__link:hover .dropdown__menu {
+    display: block;
+}
+
+.nav__link {
+    z-index: 1;
+    position: relative;
+}

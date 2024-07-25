@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bislite</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./scss/main.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#" class="nav__logo">
+                    <img src="./images/logo.png" alt="">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!-- =========== NAV MENU   ============= -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">HOME</a></li>
+
+                    <li><a href="#" class="nav__link">ABOUT US</a></li>
+
+                    <!-- ========= DROPDOWN 1 ========== -->
+                    <li class="dropdown__item">
+                        <div class="nav__link" onmouseover="toggleHover(this, true)" onmouseout="toggleHover(this, false)">
+                            SERVICES<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                   Web Desgin
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    Wordpress Design
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    Mobile App Devplopment
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    Internet Marketing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    Social Media Management
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- ========= DROPDOWN 2 ========== -->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            PORTFOLIO<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    Web Desgin
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    Wordpress Design
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    Mobile App Devplopment
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    Internet Marketing
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    Social Media Management
+                                </a>
+                            </li>
+
+                            <!-- ======= DROPDOWN SUBMENU ====== -->
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav__link">BLOG</a></li>
+                    <li><a href="#" class="nav__link">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main">
+        <!-- ========= HOME ============ -->
+        <section class="home">
+            <div class="home__container container">
+                <div class="home__images">
+                    <div class="home__swiper swiper">
+                        <div  class="swiper-wrapper">
+                            <arcticle class="home__article swiper-slide">
+                                <img src="./images//header.png" alt="">
+                            </arcticle>
+                            <arcticle class="home__article swiper-slide">
+                                <img src="./images//header.png" alt="">
+                            </arcticle>
+                            <arcticle class="home__article swiper-slide">
+                                <img src="./images//header.png" alt="">
+                            </arcticle>
+                            <arcticle class="home__article swiper-slide">
+                                <img src="./images//header.png" alt="">
+                            </arcticle>
+                            <arcticle class="home__article swiper-slide">
+                                <img src="./images//header.png" alt="">
+                            </arcticle>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+         <!-- ========= MIDDLE ============ -->
+        <section class="middle">
+            <div class="middle__container container">
+                <div class="middle__data grid">
+
+                    <div class="middle__cart">
+                        <div class="middle__clean">
+                            <div class="middle__icon">
+                                <img src="./images/middle-icon.png" alt="">
+                            </div>
+                            <p class="middle__text">CLEAN THEME</p>
+                        </div>
+
+                        <p class="middle__desc middle__heading">
+                            Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi. 
+                        </p>
+
+                        <div class="middle__icons">
+                            <img src="./images/arow-right.png" alt="">
+                            <p class="middle-read__more">Read More</p>
+                        </div>
+                    </div>
+
+                    <div class="middle__cart">
+                        <div class="middle__clean">
+                            <div class="middle__icon">
+                                <img src="./images/middle-2.png" alt="">
+                            </div>
+                            <p class="middle__text">RESPONSIVE DESIGN</p>
+                        </div>
+
+                        <p class="middle__desc middle__heading">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros.
+                        </p>
+
+                        <div class="middle__icons">
+                            <img src="./images/arow-right.png" alt="">
+                            <p class="middle-read__more">Read More</p>
+                        </div>
+                    </div>
+
+                    <div class="middle__cart">
+                        <div class="middle__clean">
+                            <div class="middle__icon">
+                                <img src="./images/middle-3.png" alt="">
+                            </div>
+                            <p class="middle__text">FULLY LAYERD PSD</p>
+                        </div>
+
+                        <p class="middle__desc middle__content-desc">
+                            Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna. 
+                        </p>
+
+                        <div class="middle__icons ">
+                            <img src="./images/arow-right.png" alt="">
+                            <p class="middle-read__more ">Read More</p>
+                        </div>
+                    </div>
+
+                    <div class="middle__cart">
+                        <div class="middle__clean">
+                            <div class="middle__icon">
+                                <img src="./images/middle-4.png" alt="">
+                            </div>
+                            <p class="middle__text">READY FOR CODING</p>
+                        </div>
+
+                        <p class="middle__desc middle__comment">
+                            Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est porta quam, non placerat eros neque porta ante. Fusce quis odio urna. 
+                        </p>
+
+                        <div class="middle__icons middle__more">
+                            <img src="./images/arow-right.png" alt="">
+                            <p class="middle-read__more">Read More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- ========= LASTETS-WORKS ============ -->
+          <section class="lastets-works">
+                <div class="lastets-works__container container">
+                    <div class="lastets-works__data">
+                        <div class="lastets-works__icons">
+                            <img src="./images/shape-icon.png" alt="">
+                            <p class="lastets-works__description">LATEST WORKS</p>
+                        </div>
+
+                        <div class="lastets-works__swiper swiper">
+                            <div class="swiper-wrapper">
+                                <article class="lastets-works__article lastets-works__image-eyes swiper-slide">
+                                    <img src="./images/lastest-works-1.png" alt="">
+
+                                    <div class="lastets-works__content">
+                                        <img src="./images/eyes.png" alt="" class="lastets-works__eyes">
+                                        <img src="./images/link.png" alt="" class="lastets-works__link">
+
+                                    </div>
+                                </article>
+
+                                <article class="lastets-works__article swiper-slide">
+                                    <img src="./images/lastest-works-2.png" alt="">
+
+                                    <div class="lastets-works__content">
+                                        <img src="./images/eyes.png" alt="" class="lastets-works__eyes">
+                                        <img src="./images/link.png" alt="" class="lastets-works__link">
+
+                                    </div>
+                                </article>
+
+                                <article class="lastets-works__article swiper-slide">
+                                    <img src="./images/lastest-works-3.png" alt="">
+
+                                    <div class="lastets-works__content">
+                                        <img src="./images/eyes.png" alt="" class="lastets-works__eyes">
+                                        <img src="./images/link.png" alt="" class="lastets-works__link">
+
+                                    </div>
+                                </article>
+
+                                <article class="lastets-works__article swiper-slide">
+                                    <img src="./images/lastest-works-4.png" alt="">
+
+                                    <div class="lastets-works__content">
+                                        <img src="./images/eyes.png" alt="" class="lastets-works__eyes">
+                                        <img src="./images/link.png" alt="" class="lastets-works__link">
+
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"  class="lastets-works__arrow-left">
+                            <img src="./images/arrow-left.png">
+                        </div>
+                        <div class="swiper-button-next" class="lastets-works__arrow-right">
+                            <img src="./images/lastest-works-right.png" >
+                        </div>
+                    </div>
+                </div>
+          </section>
+
+          <!-- ========= testimonials ============ -->
+           <section class="testimonials">
+                <div class="testimonials__container container">
+                    <div class="testimonials__data">
+                        <div class="testimonials__content">
+                            <div class="testimonials__comments">
+                                <img src="./images/testimonials-img-1.png" alt="" class="testimonials__image">
+                                <p class="testimonials__desc">
+                                    TESTIMONIALS
+                                </p>
+                            </div>
+
+                            <p class="testimonials__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut <br> nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam <br> commodo aliquam metus, sed iaculis nibh tempus id. Lorem ipsum <br> dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum <br> primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam <br> nec nisi in nisl euismod fringilla.
+
+                            </p>
+
+                            <span class="testimonials__text">John Travis, CEO, DomainName.com</span>
+
+                        </div>
+
+                        <div class="testimonials__main">
+                            <div class="testimonials__comment">
+                                <img src="./images/clients.png" alt="" class="testimonials__img">
+                                <p class="testimonials__desc testimonials__clients">
+                                    OUR CLIENTS
+                                </p>
+                            </div>
+                            <div class="testimonials__images grid">
+                                <a href="#" class="testimonials__communications">
+                                    <img src="./images/testimonials-1.png" alt="image">
+                                </a>
+
+                                <a href="" class="testimonials__leader">
+                                    <img src="./images/testimonials-2.png" alt="image" >
+                                </a>
+
+                                <a href=""  class="testimonials__fider">
+                                    <img src="./images/testimonials-3.png" alt="image">
+                                </a>
+
+                                <a href=""  class="testimonials__joinh-deere">
+                                    <img src="./images/testimonials-4.png" alt="image">
+                                </a>
+
+                                <a href=""  class="testimonials__banana-boat">
+                                    <img src="./images/testimonials-5.png" alt="image">
+                                </a>
+
+                                <a href=""  class="testimonials__fujifilm">
+                                    <img src="./images/testimonials-6.png" alt="image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonials__download">
+                        <p class="testimonials__des">
+                            This is a clean and modern, four column website PSD template. You can code it into a <br>
+                             Wordpress website, HTML5 responsive website for your personal or client works. So <br> ahead and download this wonderful PSD template! 
+                        </p>
+                        <button class="testimonials__button">
+                            <img src="./images/download.png" alt="">
+                            DOWNLOAD PSD
+                        </button>
+                    </div>
+                </div>
+           </section>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__main">
+                <a href="#" class="footer__title">
+                    ABOUT US
+                </a>
+                <p class="footer__description">
+                    Lorem ipsum dolor sit amet, <br>
+                      consectetur adipiscing elit. Morbi <br> euismod placerat dui et tincidunt. Sed <br> sollicitudin posuere auctor. Phasellus <br> at ultricies nisl. Integer at leo eros. Ut <br> nec lorem id orci convallis porta. <br> Donec pharetra neque eu velit dictum <br> molestie. 
+                </p>
+            </div>
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        EXPLORE
+                    </h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Services</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div  class="footer__column"> 
+                    <h3 class="footer__title">
+                        BROWSE
+                    </h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer__link">Careers</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Press & Media</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__title footer__contact">
+                        CONTACTS US
+                    </h3>
+                    <ul class="footer__links ">
+                        
+                        <li class="footer__bislite-inc">
+                            <a href="" class="footer__link"><span class="footer__bislite ">BisLite Inc.</span></a>
+                        </li>
+                        <div class="footer__colum">
+                            <li class=" footer__text">
+                                <a href="" class="footer__link">Always Street 265 <br> 0X - 125 - Canada</a>
+                            </li>
+                            <li  class=" footer__text">
+                                <a href="" class="footer__link">Phone: 987-6543-210 <br> Fax: 987-6543-210</a>
+                            </li>
+                        </div>
+                        
+                    </ul>
+                </div>
+              
+                <div>
+                    <h3 class="footer__title footer__heading">
+                        CONNECT WITH US
+                    </h3>
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <img src="./images/facebook.png" alt="">
+                        </a>
+                        <a href="https://www.dribbble.com/" target="_blank" class="footer__social-link">
+                           <img src="./images/dribbble.png" alt="">
+                        </a>
+                        <a href="https://www.pinterest.com/" target="_blank" class="footer__social-link">
+                           <img src="./images/pinterest.png" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="footer__social-link">
+                           <img src="./images/linkedin.png" alt="">
+                        </a>
+                        <a href="https://www.skype.com/" target="_blank" class="footer__social-link">
+                           <img src="./images/skype.png" alt="">
+                        </a>
+                        <a href="https://www.share.com/" target="_blank" class="footer__social-link">
+                           <img src="./images/share.png" alt="">
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__info container">
+            <div class="footer__copyright">
+                <span class="footer__copy">
+                    © Copyright 2021. All rights reserved. <br>
+                </span>
+                <span class="footer__symbol">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </span>
+            </div>
+
+            <a href="#" class="footer__logo-bislite">
+                <img src="./images/footer-logo.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

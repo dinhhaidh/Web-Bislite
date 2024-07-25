@@ -1,0 +1,33 @@
+.container{
+    max-width: 987px;
+    margin-inline: 1.5rem;
+    @media screen and (max-width:320px) {
+        margin-inline: 1rem;
+    }
+    @media screen and (min-width:1000px) {
+        margin: 0 auto;
+    }
+    
+}
+.grid{
+     display: grid;
+     gap: 1.5rem;
+}
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -2rem;
+}
+
+span.swiper-pagination-bullet {
+    width: 0.8rem;
+    height: 0.8rem;
+    transition: background-color .3s, opacity .3s;
+    background-color: $green71 !important;
+    margin-right: 11px !important;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 9.3px !important;
+}

@@ -1,0 +1,170 @@
+.footer{
+    padding: 2rem 0 2rem;
+    background-color: $graye8;
+    &__content, 
+    &__links {
+        display: grid;
+    }
+    &__content{
+        gap: 3.5rem 3rem;
+    }
+    &__links {
+        row-gap: .75rem;
+    }
+    &__social{
+        display: grid;
+        column-gap: 0.5rem;
+    }
+    &__title{
+        margin-bottom: 1.25rem;
+        color: $black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    &__description{
+        margin-top: 1.05rem;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: -0.1px;
+    }
+    &__info {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.25rem;
+    }
+    &__link{
+        color: $black36;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    &__main{
+        transform: translateX(-1px);
+    }
+    &__copy,
+    &__symbol{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    &__bislite{
+        font-weight: 600;
+    }
+    @media screen and (max-width: 320px) {
+        &__social{
+            grid-template-columns: repeat(3, max-content);
+        }
+    }
+    @media screen and (min-width: 320px) {
+        &__social{
+            grid-template-columns: repeat(3, max-content);
+        }
+        &__info{
+            margin-top: 3rem;
+        }
+        
+
+    }
+    @media screen and (min-width: 450px) {
+        &__content {
+            grid-template-columns: repeat(2, max-content);
+        }
+
+    }
+    @media screen and (min-width: 576px) {
+        &__content {
+            grid-template-columns: repeat(3, max-content);
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &__content {
+            grid-template-columns: repeat(4, max-content);
+        }
+        &__info{
+            flex-direction: row;
+            justify-content: space-between;
+            row-gap: .75rem;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        padding: 1.8rem 0 2.5rem;
+        &__container {
+            grid-template-columns: repeat(2, max-content);
+            justify-content: space-between;
+            margin-bottom: 2.3rem;
+        }
+        &__content {
+            gap: 3.5rem 4rem;
+        }
+        &__title{
+            margin-bottom: 3px;
+        }
+        
+        &__description{
+            line-height: 1.15;
+        }
+
+        &__description,
+        &__link,
+        &__copy{
+            font-size: 14px;
+            font-weight: 400;
+        }
+        &__copy{
+            letter-spacing: -0.56px;
+        }
+        &__title{
+            font-size: 15px;
+        }
+        &__info{
+            margin-top: 2rem;
+        }
+        &__social{
+            grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+            margin-top: 16px;
+            column-gap: 1rem;
+            row-gap: 0.5rem;
+            width: 188px;
+        }
+        &__links {
+            row-gap: 0.2rem;
+        }
+        &__copyright {
+            display: flex;
+            flex-direction: column;
+            row-gap: -1px;
+        }
+        &__symbol{
+            transform: translateY(-4px);
+            letter-spacing: -0.08px;
+        }
+        &__heading{
+            transform: translateX(7px);
+            letter-spacing: -0.1px;
+        }
+        &__column{
+            transform: translateX(10px);
+        }
+        &__bislite-inc{
+            transform: translateY(8px);
+            margin-bottom: 9px;
+        }
+        &__contact{
+            letter-spacing: -1px;
+        }
+        &__text{
+            transform: translateY(-10px);
+        }
+        &__colum{
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.8rem;
+        }
+        &__text{
+            line-height: 1.15;
+        }
+    }
+    
+  
+}
